@@ -3,18 +3,5 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/lib/*": ["./src/lib/*"]
-    },
-    "types": ["vite/client", "swiper"],
-    "verbatimModuleSyntax": false,
-    "isolatedModules": true, // إضافة مهمة لأمان الأنواع
-    "strict": true, // تفعيل وضع Strict
-    "esModuleInterop": true
-  }
+  ]
 }
