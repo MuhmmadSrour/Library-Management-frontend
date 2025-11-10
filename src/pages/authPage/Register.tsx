@@ -109,7 +109,7 @@ function Register() {
       </form>
       <img
         className="md:flex hidden w-full h-screen object-cover"
-        src="../../../images/login.jpg"
+        src="/login.jpg"
         alt=""
       />
     </div>

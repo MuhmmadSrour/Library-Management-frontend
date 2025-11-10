@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import Input from "../../components/Input";
+import { Button } from "../../components/ui/button";
 import { useLogin } from "./useLogin";
 
 function Login() {
@@ -53,7 +53,7 @@ function Login() {
       </form>
       <img
         className="md:flex hidden w-full h-screen object-cover"
-        src="../../../images/login.jpg"
+        src="/login.jpg"
         alt=""
       />
     </div>

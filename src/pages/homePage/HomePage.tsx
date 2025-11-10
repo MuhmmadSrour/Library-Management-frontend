@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import BookInfo from "@/components/landing-page/BookInfo";
 import ContactUs from "@/components/landing-page/ContactUs";
 import LibraryCard from "@/components/landing-page/LibraryCard";
