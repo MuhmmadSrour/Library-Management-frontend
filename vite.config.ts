@@ -7,7 +7,15 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "@/lib": path.resolve(__dirname, "./src/lib"), // إضافة محددة لمجلد lib
+      "@/lib": path.resolve(__dirname, "./src/lib"),
     },
   },
+  // إضافة أساسية
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    emptyOutDir: true,
+  },
+  // مهم للرواتر
+  base: "./",
 });

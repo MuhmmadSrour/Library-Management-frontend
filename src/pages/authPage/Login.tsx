@@ -42,7 +42,7 @@ function Login() {
           type="submit"
           className="bg-brown-500 mt-5"
         >
-          login
+          sign in
         </Button>
         <div className="text-center flex items-center justify-center text-sm">
           <span className="opacity-80">Dont have an account ?</span>
