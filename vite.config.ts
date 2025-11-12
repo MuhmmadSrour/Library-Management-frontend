@@ -17,5 +17,5 @@ export default defineConfig({
     emptyOutDir: true,
   },
   // مهم للرواتر
-  base: "./",
+  base: "/",
 });
