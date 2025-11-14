@@ -1,12 +1,13 @@
 import { useQueryClient, type UseQueryResult } from "@tanstack/react-query";
 import type { AxiosResponse } from "axios";
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { toast, useToast } from "@/hooks/use-toast";
 import { deleteCookie } from "cookies-next";
 import { token } from "./context/signal";
-import { toast } from "./hooks/use-toast";
 
 export function useApi() {
   const client = useQueryClient();
+  const { toast } = useToast();
   function handelSuccess({
     islog = false,
     res,
@@ -22,7 +23,8 @@ export function useApi() {
     if (islog) {
       toast({
         title: "success",
-        description: res.data.materials.message,
+        description: res.data.message,
+        variant: "success",
       });
     }
     return res.data.materials;
@@ -40,10 +42,11 @@ export function handelerror({
   err: any;
 }) {
   if (islog)
-    if (err?.response?.message) {
+    if (err?.response?.data.message) {
       toast({
         title: "error",
-        description: err?.response?.message,
+        description: err?.response?.data.message,
+        variant: "warning",
       });
     }
 

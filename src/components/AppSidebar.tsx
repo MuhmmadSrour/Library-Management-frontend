@@ -63,8 +63,9 @@ function AppSidebar() {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogTitle>Are you sure you want to log out?</DialogTitle>
-                  <DialogFooter>
+                  <DialogFooter className="gap-2 sm:gap-30 ">
                     <Button
+                      className="sm:w-1/2"
                       onClick={() => {
                         deleteCookie("token-test");
                         token.value = "";
@@ -72,7 +73,12 @@ function AppSidebar() {
                     >
                       log out
                     </Button>
-                    <Button onClick={() => setIsLogOut(false)}>cancel</Button>
+                    <Button
+                      className="sm:w-1/2"
+                      onClick={() => setIsLogOut(false)}
+                    >
+                      cancel
+                    </Button>
                   </DialogFooter>
                 </DialogContent>
               </Dialog>

@@ -17,11 +17,11 @@ export function useLogin() {
       try {
         return myAxios.post("/auth/login", { email, password });
       } catch (err) {
-        handelerror({ err });
+        handelerror({ err, islog: true });
       }
     },
     onSuccess: (res) => {
-      token.value = handelSuccess({ res }).data.token;
+      token.value = handelSuccess({ res, islog: true }).data.token;
 
       UserInfo.value = handelSuccess({ res }).data.user;
     },

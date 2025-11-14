@@ -41,12 +41,12 @@ export function useRegister() {
       });
     },
     onSuccess: (res) => {
-      handelSuccess({ res });
+      handelSuccess({ res, islog: true });
       setTimeout(() => {
         navigate("/login");
       }, 2000);
     },
-    onError: (err) => handelerror({ err }),
+    onError: (err) => handelerror({ err, islog: true }),
   });
 
   function sendData(data: FieldValues) {
