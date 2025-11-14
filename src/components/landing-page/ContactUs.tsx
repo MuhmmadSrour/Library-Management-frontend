@@ -9,11 +9,12 @@ function ContactUs() {
       </div>
       <div className="flex flex-col">
         <h4 className="text-lg font-semibold ">phone number</h4>
-        <p>096722604</p>
+        <p>0967226041</p>
       </div>
       <div className="flex flex-col">
         <h4 className="text-lg font-semibold ">email</h4>
         <p>myLibrary@lip.com</p>
+        <p>muhmmadsrour6@gmail.com</p>
       </div>
     </div>
   );

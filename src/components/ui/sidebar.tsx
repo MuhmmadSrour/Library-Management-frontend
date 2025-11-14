@@ -186,7 +186,7 @@ const Sidebar = React.forwardRef<
       return (
         <div
           className={cn(
-            "flex h-full w-[--sidebar-width] flex-col  text-sidebar-foreground",
+            "flex h-full w-[--sidebar-width] flex-col   text-sidebar-foreground",
             className
           )}
           ref={ref}
@@ -203,7 +203,7 @@ const Sidebar = React.forwardRef<
           <SheetContent
             data-sidebar="sidebar"
             data-mobile="true"
-            className="w-[--sidebar-width]  p-0 text-sidebar-foreground [&>button]:hidden"
+            className="w-[--sidebar-width] bg-brown-100  p-0 text-sidebar-foreground [&>button]:hidden"
             style={
               {
                 "--sidebar-width": SIDEBAR_WIDTH_MOBILE,
@@ -280,7 +280,7 @@ const SidebarTrigger = React.forwardRef<
       data-sidebar="trigger"
       variant="ghost"
       size="icon"
-      className={cn("h-7 w-7", className)}
+      className={cn("h-7 w-7 ", className)}
       onClick={(event) => {
         onClick?.(event);
         toggleSidebar();
@@ -288,7 +288,7 @@ const SidebarTrigger = React.forwardRef<
       {...props}
     >
       <PanelLeft />
-      <span className="sr-only">Toggle Sidebar</span>
+      <span className="sr-only ">Toggle Sidebar</span>
     </Button>
   );
 });
